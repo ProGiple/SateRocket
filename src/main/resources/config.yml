@@ -1,0 +1,47 @@
+settings:
+  storage:
+    url: 'jdbc:mysql://localhost:3306/SateGuard'
+    username: 'admin_lp'
+    password: '1q0o2w9ibn'
+    driverClass: 'com.mysql.cj.jdbc.Driver'
+    tableName: 'saterocket'
+    poolSize: 10
+    maxRetries: 5
+    asyncThreadPoolSize: 10
+  blacklists:
+    disableShulkers: true
+    nbt: []
+    materials:
+      - BEDROCK
+  beautifulCost: true # округлять ли числа до "красивых" значений? (например, 46509 -> 46000)
+  money_cost: 500000
+  jewels_cost: 219
+  buying_type: ALL # ONLY_MONEY, ONLY_JEWELS, ALL, ALL_REVERSE
+  cost_multiplier: 1.05 # на сколько увеличить цену на след. покупки после покупки слота?
+  setter_item:
+    material: TARGET
+    displayName: "{S}Модуль переноса"
+    lore: []
+  hologram:
+    enabled: true
+    height: 2.4
+    lines:
+      - 'Material.TARGET'
+      - '{S}Модуль переноса'
+messages:
+  itemInBlacklist:
+    - "{SP} &fЭтот предмет запрещён для переноса!"
+  itemIsPickup:
+    - '{SP} &fВы успешно забрали предмет из модуля!'
+  storageIsFull:
+    - '{SP} &fХранилище модуля уже заполнено!'
+  forSendItemsAreNull:
+    - '{SP} &fДля начала положите предмет в слот переноса!'
+  noMoney:
+    - "{SP} &fУ вас не хватает монеток! Нужно ещё {S}[0]!"
+  noJewels:
+    - "{SP} &fу вас не хватает звёзд! Нужно ещё {S}[0] шт.!"
+  sendToRocket:
+    - "{SP} &fРесурсы успешно отправлены!"
+  reload:
+    - '{SP} &fПлагин перезагружен!'

@@ -1,0 +1,77 @@
+title: "&0Модуль переноса"
+rows: 6
+items:
+  decorations:
+    1:
+      material: BLUE_STAINED_GLASS_PANE
+      lore: []
+      displayName: " "
+      slots:
+        - 0, 1
+        - 7-9
+        - 17, 18
+        - 26, 27
+        - 35, 36
+        - 44-46
+        - 52, 53
+    2:
+      material: WHITE_STAINED_GLASS_PANE
+      lore: []
+      displayName: " "
+      slots:
+        - 2, 10, 19, 28, 37, 47
+        - 6, 16, 25, 34, 43, 51
+    info:
+      material: OAK_SIGN
+      lore:
+        - " "
+        - "{S} ⁝ Модуль переноса&f нужен для"
+        - "{S} ⁝&f транспортировки ресурсов"
+        - "{S} ⁝&f между {S}вайпами!&f Для этого"
+        - "{S} ⁝&f вам нужно получить не мало"
+        - "{S} ⁝ монеток &fили{S} Звёзд, а затем"
+        - "{S} ⁝&f положить {S}до трёх предметов"
+        - "{S} ⁝&f в чёрные панели в менюшке!"
+        - " "
+        - "{S} ⁝&f За {S}каждый&f предмет вы должны"
+        - "{S} ⁝&f будете заплатить для него"
+        - "{S} ⁝&f нужную стоимость. Также"
+        - "{S} ⁝&f чем {S}больше&f у вас {S}в хранилище"
+        - "{S} ⁝&f ресурсов - тем {S}больше цена"
+        - "{S} ⁝&f на следующий перенос!"
+        - " "
+      displayName: "{S} Информация"
+      slots:
+        - 53
+  clickable:
+    SEND_SLOT:
+      material: BLACK_STAINED_GLASS_PANE
+      enchanted: true
+      displayName: "{S} Слот транспортировки"
+      lore:
+        - " "
+        - "{S} ⁝&f Положите сюда любой предмет"
+        - "{S} ⁝&f Чтобы вы могли его {S}перенести!"
+        - " "
+      slots:
+        - 21-23
+    SEND:
+      material: EMERALD
+      displayName: "{S} Подтверждение переноса"
+      lore:
+        - " "
+        - "{S} ⁝&f Цена переноса {S}[putted] &fшт.:"
+        - "   {S}&l▪ {S}[jewels_cost] Звёзд &7(ПКМ)"
+        - "   {S}&l▪ {S}[vault_cost] Монет &7(ЛКМ)"
+        - " "
+        - "{S} ⁝&f Хранилище: {S}[storaged] / [max]"
+        - " "
+      slot: 31
+    TO_STORAGE:
+      material: CHEST_MINECART
+      displayName: "{S} Хранилище модуля"
+      lore:
+        - " "
+        - "{S} ⁝&f Содержит предметов: {S}[storaged] / [max]"
+        - " "
+      slot: 49

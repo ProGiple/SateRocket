@@ -1,0 +1,25 @@
+name: SateRocket
+version: '1.0.5'
+main: org.satellite.progiple.saterocket.SateRocket
+api-version: '1.16'
+depend:
+  - LunaSpring
+  - NBTAPI
+softdepend:
+  - Vault
+  - SateJewels
+  - DecentHolograms
+commands:
+  saterocket:
+    aliases:
+      - sr
+      - srocket
+      - rocket
+      - sater
+permissions:
+  saterocket.give:
+    default: op
+  saterocket.open:
+    default: op
+  saterocket.reload:
+    default: op

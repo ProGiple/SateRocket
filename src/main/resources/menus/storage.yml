@@ -1,0 +1,38 @@
+title: "&0Хранилище модуля"
+rows: 6
+items:
+  decorations:
+    1:
+      material: BLUE_STAINED_GLASS_PANE
+      lore: [ ]
+      displayName: " "
+      slots:
+        - 0, 1
+        - 7-9
+        - 17, 18
+        - 26, 27
+        - 35, 36
+        - 44-46
+        - 52, 53
+    2:
+      material: WHITE_STAINED_GLASS_PANE
+      lore: [ ]
+      displayName: " "
+      slots:
+        - 2-6
+        - 47, 48, 50, 51
+  clickable:
+    BACK:
+      material: SPECTRAL_ARROW
+      displayName: "{S}Обратно"
+      lore: []
+      slot: 49
+    STORAGE_SLOT:
+      material: BLACK_STAINED_GLASS_PANE
+      displayName: "{S}Пустой слот хранилища"
+      lore: []
+      slots:
+        - 10-16
+        - 19-25
+        - 28-34
+        - 37-43

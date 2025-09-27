@@ -1,0 +1,37 @@
+title: "&0Подтверждение"
+rows: 4
+items:
+  decorations:
+    1:
+      material: BLACK_STAINED_GLASS_PANE
+      displayName: " "
+      lore: []
+      slots:
+        - 4, 13, 22, 31
+  clickable:
+    CONFIRM:
+      material: LIME_STAINED_GLASS_PANE
+      displayName: "&aПодтвердить"
+      lore:
+        - " "
+        - "&a ⁝&c Внимание! &fПосле нажатия на"
+        - "&a ⁝ подтверждение&f на сбор этого"
+        - "&a ⁝&f предмета, вы &aсразу&f получите"
+        - "&a ⁝&f его в свой инвентарь, но при"
+        - "&a ⁝&f этом &aмонетки&f за слот и сам"
+        - "&a ⁝&f &aслот модуля&f просто пропадут!"
+        - " "
+      slots:
+        - 0-3
+        - 9-12
+        - 18-21
+        - 27-30
+    CANCEL:
+      material: RED_STAINED_GLASS_PANE
+      displayName: "&cОтменить"
+      lore: []
+      slots:
+        - 5-8
+        - 14-17
+        - 23-26
+        - 32-35

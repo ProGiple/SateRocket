@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="DecentHolograms-2.8.9">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../SateMoon/libs/DecentHolograms-2.8.9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
