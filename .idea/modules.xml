@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SateRocket.iml" filepath="$PROJECT_DIR$/SateRocket.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/SateRocket.iml" filepath="$PROJECT_DIR$/.idea/SateRocket.iml" />
     </modules>
   </component>
 </project>

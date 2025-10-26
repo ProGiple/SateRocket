@@ -3,7 +3,7 @@ package org.satellite.progiple.saterocket.storage;
 import lombok.Getter;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
-import org.novasparkle.lunaspring.API.util.service.realized.Cache;
+import org.novasparkle.lunaspring.API.util.utilities.Cache;
 import org.satellite.progiple.saterocket.SateRocket;
 
 import java.util.List;
