@@ -6,7 +6,7 @@
 
   <groupId>org.satellite.progiple</groupId>
   <artifactId>SateRocket</artifactId>
-  <version>1.0.5</version>
+  <version>1.0.6</version>
   <packaging>jar</packaging>
 
   <name>SateRocket</name>
@@ -94,13 +94,13 @@
         <dependency>
             <groupId>com.github.ProGiple</groupId>
             <artifactId>SateJewels</artifactId>
-            <version>2.0.15</version>
+            <version>2.1.0</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.github.NovaSparkle</groupId>
             <artifactId>LunaSpring</artifactId>
-            <version>3.7.5</version>
+            <version>3.12</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
