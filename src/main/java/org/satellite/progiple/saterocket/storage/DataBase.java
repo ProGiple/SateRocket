@@ -26,8 +26,11 @@ public class DataBase extends AsyncExecutor {
         this.executeAsync(String.format("CREATE TABLE IF NOT EXISTS %s (Player varchar(55), RocketItems MEDIUMTEXT);", this.tableName));
     }
 
-    public @NotNull List<ItemStack> getItems(String nick) {
-        String data = this.executeQuery(String.format("SELECT RocketItems FROM %s WHERE player=?;", this.tableName), this.resultSetHandler, nick.toLowerCase()).stream().findFirst().orElse(null);
+    public @NotNull List<ItemStack> getItems(String uuid) {
+        String data = this.executeQuery(String.format("SELECT RocketItems FROM %s WHERE player=?;", this.tableName), this.resultSetHandler, uuid)
+                .stream()
+                .findFirst()
+                .orElse(null);
         if (data == null || data.isEmpty()) return new ArrayList<>();
 
         try {
@@ -37,16 +40,14 @@ public class DataBase extends AsyncExecutor {
         }
     }
 
-    public void setItems(String nick, List<ItemStack> itemStacks) {
-        nick = nick.toLowerCase();
-
-        List<String> dataList = this.executeQuery(String.format("SELECT RocketItems FROM %s WHERE Player=?;", this.tableName), this.resultSetHandler, nick);
+    public void setItems(String uuid, List<ItemStack> itemStacks) {
+        List<String> dataList = this.executeQuery(String.format("SELECT RocketItems FROM %s WHERE Player=?;", this.tableName), this.resultSetHandler, uuid);
         String data = Utils.Base64.serializeList(itemStacks);
         if (dataList.isEmpty()) {
-            this.executeSync(String.format("INSERT INTO %s (Player, RocketItems) VALUES (?, ?);", this.tableName), nick, data);
+            this.executeSync(String.format("INSERT INTO %s (Player, RocketItems) VALUES (?, ?);", this.tableName), uuid, data);
         }
         else {
-            this.executeSync(String.format("UPDATE %s SET RocketItems=? WHERE Player=?;", this.tableName), data, nick);
+            this.executeSync(String.format("UPDATE %s SET RocketItems=? WHERE Player=?;", this.tableName), data, uuid);
         }
     }
 

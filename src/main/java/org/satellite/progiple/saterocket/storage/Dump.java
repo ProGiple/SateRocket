@@ -17,12 +17,12 @@ public class Dump {
     @Getter private final Player player;
     private Dump(Player player) {
         this.storage = SateRocket.getINSTANCE().getDataBase();
-        this.itemStacks = storage.getItems(player.getName());
+        this.itemStacks = storage.getItems(player.getUniqueId().toString());
         this.player = player;
     }
 
     public void putItems() {
-        this.storage.setItems(this.player.getName(), this.itemStacks);
+        this.storage.setItems(this.player.getUniqueId().toString(), this.itemStacks);
     }
 
     public static Dump create(Player player) {
